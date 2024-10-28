@@ -1,0 +1,39 @@
+Reflection:
+The exercise highlighted the importance of understanding API configuration, parameter tuning, and error handling when interfacing with a large language model.
+
+Challenges:
+1. Token authentication:
+    - One initial hurdle was ensuring that the API token was passed correctly from the environment variable. 
+    - API keys are crucial for authentication, and any minor misconfiguration could lead to authentication errors.
+    - Also, keeping them secure is essential to prevent misuse. So instead of typing it out in the code, I programmatically
+        retrieve it at runtime from environment variables. Instructions in README on how to add token to the env var. 
+
+2. Model parameters and tuning:
+    - Learnt about how parameters like temperature, top_k, repetition_penalty influence the output.
+    - The initial challenge was that the API will tend to return the same output. So I played around
+        with the parameter values to add repetition_penalty as well as creativity scale (temperature)
+        to give more randomized, creative outputs. Feel free to change values to see the difference.
+
+3. API Request handling:
+    - Handling errors such as network issues or invalid tokens required implementing robust exception
+        handling. This is crucial for ensuring smooth user experiences.
+    - This also helped in figuring out the where the errors were coming from.
+
+
+Learnings:
+The project deepened my understanding of how generative models like GPT-2 work and how their performance can be guided by different parameters.
+ The "temperature" controls the randomness of responses, while "top_k" and "top_p" help balance creativity and relevance in text generation.
+I learned more about interfacing with external APIs and the importance of validating the responses, especially in AI-based applications 
+ where the output depends heavily on correct API interactions. 
+The project emphasized how slight tweaks to model parameters can have a significant impact on the style and coherence of generated text. 
+ Experimentation is key when optimizing for different use cases like creative writing or more factual responses.
+
+
+Future Applications:
+With a newfound understanding, I can apply these skills to more complex gen-AI tasks. Creating chatbots, content generators or NLP tasks will be easier
+Aspects can be further extended to business applications such as developing AI driven cistomer service systems or marketing content as well. 
+I currently used slightly outdated models because of low or no cost budget. I will like to experiment further with different models to analyze the results.
+
+
+This project not only helped solidify my understanding of generative AI but also taught me practical skills in API integration and model experimentation.
+These lessons will be directly applicable to the Final project for the course as well as my future AI projects. 
